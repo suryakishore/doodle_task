@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivShoppingImage"
+            android:layout_width="@dimen/oneFifty_dp"
+            android:layout_height="@dimen/oneten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemName"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="KISHORE"
+            android:textColor="@color/colorBlack"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivShoppingImage"
+            app:layout_constraintStart_toEndOf="@+id/ivShoppingImage"
+            app:layout_constraintTop_toTopOf="@+id/ivShoppingImage" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:drawablePadding="@dimen/ten_dp"
+            android:drawableTint="@color/allGrayColor"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/quantity"
+            android:textColor="@color/colorBlack"
+            android:typeface="normal"
+            app:drawableEndCompat="@drawable/down_arrow_svg"
+            app:layout_constraintLeft_toRightOf="@+id/ivShoppingImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemName" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:drawablePadding="@dimen/ten_dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:typeface="normal"
+            app:layout_constraintLeft_toRightOf="@+id/ivShoppingImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemQty"
+            tools:text="$250" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActualPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:drawablePadding="@dimen/ten_dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/allGrayColor"
+            android:typeface="normal"
+            app:layout_constraintLeft_toRightOf="@+id/tvProductPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemQty"
+            tools:text="$350" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRemove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:background="@drawable/rectangle_gray_stroke"
+            android:drawablePadding="@dimen/ten_dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingTop="@dimen/ten_dp"
+            android:paddingBottom="@dimen/ten_dp"
+            android:singleLine="true"
+            android:text="@string/remove"
+            android:textAllCaps="true"
+            android:textColor="@color/allGrayColor"
+            android:typeface="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivShoppingImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

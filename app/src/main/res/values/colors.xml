@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="allLightGreyColor">#F5F5F5</color>
+    <color name="colorBlack">#040404</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="yellow">#FAC917</color>
+    <color name="colorSilverApprox">#C4C4C4</color>
+    <color name="alto">#D5D5D5</color>
+    <color name="allGrayColor">#808080</color>
+    <color name="colorProductGallerysolid">#EFEFEF</color>
+
+</resources>

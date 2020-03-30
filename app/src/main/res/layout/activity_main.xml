@@ -1,0 +1,90 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.example.moviename.movies.movies.MainActivity">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.myapplication.home.ShoppingViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/fifteen_dp"
+            android:paddingBottom="@dimen/fifteen_dp"
+            android:text="@string/shopping"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvShoppingCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty_dp"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/two_dp"
+            android:text="@string/womenWears"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvShopping" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:layout_marginBottom="@dimen/two_dp"
+            android:drawablePadding="@dimen/ten_dp"
+            android:onClick="@{() -> viewModel.onSortClicked()}"
+            android:paddingTop="@dimen/five_dp"
+            android:paddingBottom="@dimen/five_dp"
+            android:text="@string/sort"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            app:drawableStartCompat="@drawable/ic_sort"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvShopping" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvShoppingList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvShoppingCategory" />
+
+         <ProgressBar
+             android:id="@+id/progressBar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="visible"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

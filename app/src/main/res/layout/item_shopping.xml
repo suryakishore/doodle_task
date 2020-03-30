@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clItemShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_gray_stroke"
+         android:layout_margin="@dimen/twenty_dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivShoppingImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="@+id/ivShoppingImage"
+            app:layout_constraintStart_toStartOf="@+id/ivShoppingImage"
+            app:layout_constraintTop_toBottomOf="@+id/ivShoppingImage"
+            tools:text="KISHORE" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:typeface="monospace"
+            android:paddingBottom="@dimen/ten_dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvItemName"
+            app:layout_constraintStart_toStartOf="@+id/tvItemName"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemName"
+            android:text="$ 150" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Shoper</string>
+    <string name="shopping">Shopping</string>
+    <string name="womenWears">Women wears</string>
+    <string name="refine">Refine</string>
+    <string name="sort">sort</string>
+    <string name="sortBy">Sort By</string>
+    <string name="free">Free</string>
+    <string name="networkWarning">Please connect to internet</string>
+
+    <string-array name="sort_types">
+        <item>Price — Low to High</item>
+        <item>Price — High to Low</item>
+        <item>Newest First</item>
+    </string-array>
+    <string name="cart">Cart Items</string>
+    <string name="priceDetail">Price Detail</string>
+    <string name="bagTotal">Bag Total</string>
+    <string name="bagDiscount">Bag Discount</string>
+    <string name="subTotal">Sub Total</string>
+    <string name="delivery">Delivery</string>
+    <string name="totalPayable">Total Payable</string>
+    <string name="size">Size</string>
+    <string name="quantity">Qty</string>
+    <string name="item">Item</string>
+    <string name="remove">Remove</string>
+    <string name="currencySymbol">$</string>
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
